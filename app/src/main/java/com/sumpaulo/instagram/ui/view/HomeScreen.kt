@@ -15,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sumpaulo.instagram.R
+import com.sumpaulo.instagram.data.Story
 
 @Composable
 fun HomeScreen() {
@@ -24,6 +25,7 @@ fun HomeScreen() {
             .background(MaterialTheme.colorScheme.background)
     ) {
         InstagramToolbar()
+        StoryItem(story = Story(userNickName = "Jane Doe", userAvatar = "https://static.vecteezy.com/system/resources/thumbnails/008/846/297/small_2x/cute-boy-avatar-png.png"))
     }
 }
 
